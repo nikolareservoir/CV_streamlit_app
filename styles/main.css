@@ -1,0 +1,98 @@
+/* Import Google Fonts - always at the top */
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
+
+/* Apply Readex Pro to everything */
+* {
+    font-family: 'Readex Pro', sans-serif; /* Added a fallback font */
+}
+
+/* Base body styling for centering the CV page and background */
+body {
+    background-color: #f0f2f6; /* Light gray background for the overall browser page */
+    display: flex;
+    justify-content: center; /* Center the CV horizontally */
+    align-items: flex-start; /* Align to the top of the viewport */
+    min-height: 100vh; /* Ensure it takes at least full viewport height */
+    padding: 20px; /* Padding around the CV on the browser page */
+}
+
+/* Styles for your main CV container (the "page" with the border) */
+.cv-page {
+    background-color: white; /* White background for the CV itself */
+    border: 1px solid #ddd; /* **YOUR PAGE BORDER HERE** - subtle light gray */
+    padding: 30px 40px; /* Padding inside the CV border */
+    margin: 20px 0; /* Margin top/bottom to separate from the top/bottom of the screen */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Soft shadow for a "paper" effect */
+    border-radius: 8px; /* Slightly rounded corners for the CV page */
+    max-width: 850px; /* Max width to mimic a typical CV page width */
+    width: 100%; /* Ensure it takes full width up to max-width */
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Link styling */
+a {
+    text-decoration: none;
+    color: black !important;
+    font-weight: 500;
+}
+
+a:hover {
+    color: #d33682 !important;
+    text-decoration: none;
+}
+
+/* List styling */
+ul {
+    list-style-type: none;
+    padding-left: 0; /* Remove default padding for ul */
+}
+
+/* Horizontal rule styling */
+hr {
+    margin-top: 0px;
+    margin-bottom: 5%;
+    border: none; /* Remove default border */
+    border-top: 1px solid #eee; /* Add a subtle custom line */
+}
+
+/* Hide Streamlit default UI elements */
+#MainMenu {
+    visibility: hidden;
+}
+footer {
+    visibility: hidden;
+}
+header {
+    visibility: hidden;
+}
+
+/* Optional: Additional styling for CV headers and content */
+.cv-page h1 {
+    color: #2c3e50;
+    margin-bottom: 5px;
+    text-align: center;
+    font-weight: 700; /* Make main name bolder */
+    font-size: 2.5em;
+}
+
+.cv-page h2 {
+    color: #34495e;
+    font-size: 1.6em;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee; /* Light line under section headers */
+    padding-bottom: 5px;
+    font-weight: 600; /* Semi-bold for section headers */
+}
+
+.cv-page h3 {
+    color: #34495e;
+    margin-bottom: 5px;
+    font-weight: 500; /* Medium weight for sub-headers */
+}
+
+.cv-page p, .cv-page li {
+    margin-bottom: 8px; /* Slightly less margin for paragraphs/list items */
+    font-weight: 300; /* Lighter weight for body text */
+}

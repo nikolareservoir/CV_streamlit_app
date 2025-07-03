@@ -111,7 +111,7 @@ st.write(
 # --- JOB 2
 st.write('\n')
 st.write("🚧", "**Reservoir Engineer | NIS a.d Novi Sad, Republic of Serbia**")
-st.write("01/2018 - 02/2022")
+st.write("10/2020 - 04/2023")
 st.write(
     """
 - ► Calculated reserves and recovery, generated production forecasts, and created/optimized field development plans using material balance and decline applications
